@@ -574,8 +574,8 @@ public class lab {
         // 初始化PageRank值
         Arrays.fill(pr, 1.0 / n);
         
-        // 迭代计算PageRank（使用20次迭代近似）
-        for (int iter = 0; iter < 20; iter++) {
+        // 迭代计算PageRank（使用100次迭代近似）
+        for (int iter = 0; iter < 100; iter++) {
             // 计算新的PageRank值
             for (int i = 0; i < n; i++) {
                 newPr[i] = (1 - d) / n;
